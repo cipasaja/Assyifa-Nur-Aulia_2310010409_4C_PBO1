@@ -33,6 +33,9 @@ protected static final DateTimeFormatter TANGGAL_FMT = DateTimeFormatter.ofPatte
 protected String formatTanggal() {
     return tanggal.format(TANGGAL_FMT);
 }
+
+public abstract String getInfoTransaksi();
+
 }
 
 
