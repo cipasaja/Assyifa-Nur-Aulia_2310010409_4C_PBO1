@@ -28,5 +28,16 @@ public class KeuanganApp {
     }
     System.out.println("===================================\n");
     }
+    public double hitungSaldo() {
+    double saldo = 0;
+    for (Transaksi t : transaksiList) {
+        if (t instanceof Pemasukan) {
+            saldo += t.getNominal();
+        } else if (t instanceof Pengeluaran) {
+            saldo -= t.getNominal();
+        }
+    }
+    return saldo;
+    }
 
 }
