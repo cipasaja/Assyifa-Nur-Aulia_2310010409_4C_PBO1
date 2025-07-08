@@ -16,5 +16,17 @@ public class KeuanganApp {
     transaksiList.add(t);
     System.out.println("Transaksi berhasil ditambahkan!\n");
     }
+    
+    public void tampilkanSemua() {
+    if (transaksiList.isEmpty()) {
+        System.out.println("Belum ada transaksi.\n");
+        return;
+    }
+    System.out.println("======== DAFTAR TRANSAKSI ========");
+    for (Transaksi t : transaksiList) {
+        System.out.println(t.getInfoTransaksi());
+    }
+    System.out.println("===================================\n");
+    }
 
 }
