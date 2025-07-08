@@ -9,5 +9,7 @@ public class Pengeluaran extends Transaksi {
     super(tanggal, nominal, kategori, keterangan);
     this.metodePembayaran = metodePembayaran;
 }
+    public String getMetodePembayaran() { return metodePembayaran; }
+    public void setMetodePembayaran(String metodePembayaran) { this.metodePembayaran = metodePembayaran; }
 
 }
