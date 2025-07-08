@@ -1,6 +1,7 @@
 package Catatankeuanganpribadi;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Transaksi {
     private LocalDate tanggal;
@@ -26,6 +27,12 @@ public void setKategori(String kategori) { this.kategori = kategori; }
 public String getKeterangan() { return keterangan; }
 public void setKeterangan(String keterangan) { this.keterangan = keterangan; }
 
+
+protected static final DateTimeFormatter TANGGAL_FMT = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+protected String formatTanggal() {
+    return tanggal.format(TANGGAL_FMT);
+}
 }
 
 
