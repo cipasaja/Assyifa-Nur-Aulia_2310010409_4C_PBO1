@@ -3,7 +3,7 @@ package Catatankeuanganpribadi;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class Transaksi {
+public abstract class Transaksi {
     private LocalDate tanggal;
     private double nominal;
     private String kategori;
