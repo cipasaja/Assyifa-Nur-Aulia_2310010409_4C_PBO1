@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Catatankeuanganpribadi;
 
-/**
- *
- * @author WIN 11
- */
+import java.time.LocalDate;
+
 public class Transaksi {
-    
+    private LocalDate tanggal;
+    private double nominal;
+    private String kategori;
+    private String keterangan;
 }
