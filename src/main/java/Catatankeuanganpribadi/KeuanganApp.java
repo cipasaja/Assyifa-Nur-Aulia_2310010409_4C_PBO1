@@ -12,4 +12,9 @@ public class KeuanganApp {
     public KeuanganApp() {
         transaksiList = new ArrayList<>();
     }
+    public void tambahTransaksi(Transaksi t) {
+    transaksiList.add(t);
+    System.out.println("Transaksi berhasil ditambahkan!\n");
+    }
+
 }
